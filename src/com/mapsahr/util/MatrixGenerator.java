@@ -3,9 +3,7 @@ package com.mapsahr.util;
 
 import java.util.Random;
 
-/**
- * Utility class to generate the matrix.
- */
+
 public class MatrixGenerator {
 
     public static int[][] generateMatrix(int rows, int columns) {
@@ -20,7 +18,7 @@ public class MatrixGenerator {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
 
-                result[i][j] = random.nextInt(100) * 10;
+                result[i][j] = random.nextInt(10) ;
 
             }
         }
@@ -32,7 +30,7 @@ public class MatrixGenerator {
     // to print the matrix
     public static void print(int[][] matrix) {
 
-        System.out.println();
+        System.out.println("");
 
         int rows = matrix.length;
         int columns = matrix[0].length;

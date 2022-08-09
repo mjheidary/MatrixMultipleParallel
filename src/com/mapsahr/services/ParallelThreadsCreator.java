@@ -18,6 +18,7 @@ public class ParallelThreadsCreator {
                 waitForThreads(threads);
             }
         }
+        System.out.println("Number of Threads: " + threads.size());
     }
 
     private static void waitForThreads(List threads) {
